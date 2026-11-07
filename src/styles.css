@@ -1,7 +1,4 @@
-/* ==========================================================
-   Purple palette (exact values from the design brief)
-   White / off-white and neutral text are used for readability.
-   ========================================================== */
+
 :root {
   --p-950: #10002b;
   --p-900: #240046;
@@ -482,7 +479,7 @@ a:hover {
 }
 
 /* ==========================================================
-   Image placeholders (profile photo and two project previews only)
+   Image placeholders
    ========================================================== */
 .image-slot {
   display: block;

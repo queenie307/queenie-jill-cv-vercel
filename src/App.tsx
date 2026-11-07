@@ -205,11 +205,19 @@ export default function App() {
             </Reveal>
 
             <Reveal delay={160}>
-              <div className="card link-card link-card--static">
+                <a
+                className="card card--lift link-card"
+                href={social.linkedin.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${social.linkedin.label} profile, ${social.linkedin.handle} (opens in a new tab)`}
+              >
                 <span className="link-label">{social.linkedin.label}</span>
-                <span className="link-handle">{social.linkedin.note}</span>
-                <span className="link-note">To be added</span>
-              </div>
+                <span className="link-handle">{social.linkedin.handle}</span>
+                <span className="link-arrow" aria-hidden="true">
+                  Visit profile ↗
+                </span>
+              </a>
             </Reveal>
 
             <Reveal delay={0}>

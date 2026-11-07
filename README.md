@@ -1,4 +1,4 @@
-# Personal CV Website (Profile 3)
+# Personal CV Website
 
 A calm, minimal personal CV website for **Queenie Jill D. Sumalinog**, a fourth-year Bachelor of Science in Information Technology student at Davao del Norte State College in Panabo City, Philippines. Built for the System Integration and Architecture course.
 
@@ -8,7 +8,7 @@ ADD AFTER DEPLOYMENT (paste the public Vercel URL here)
 
 ## GitHub Repository
 
-ADD AFTER CREATING THE REPOSITORY (the repository will be under https://github.com/queenie307/)
+https://github.com/queenie307/queenie-jill-cv-vercel
 
 ## Owner
 
@@ -23,7 +23,7 @@ ADD AFTER CREATING THE REPOSITORY (the repository will be under https://github.c
 - Plain CSS (no UI library, no paid API, no secret keys)
 - Vercel for hosting
 
-These are the tools used to build this website, not a claim about other skills.
+These are the tools used to build this website.
 
 ## Features
 
@@ -50,30 +50,7 @@ npm run preview    # preview the production build locally
 
 Everything is in **`src/data/content.ts`**: text, honors, skills, projects, links and image paths. Components do not need to change. The full home address is kept in the data file but only San Vicente, Panabo City is shown on the site.
 
-## Adding the Three Images
 
-Only three images exist on this site: the **profile photo**, the **coral reef capstone preview** and the **Prime Venture preview**.
-
-1. Copy your files into `public/images/` using these names:
-   - `profile.jpg`
-   - `coral-reef-project.jpg`
-   - `prime-venture-project.jpg`
-2. Open `src/data/content.ts` and change `src: null` to the matching path:
-   - `profile.photo` → `src: "/images/profile.jpg"`
-   - first project → `src: "/images/coral-reef-project.jpg"`
-   - second project → `src: "/images/prime-venture-project.jpg"`
-3. Rewrite each `alt` to describe the real picture.
-4. Adjust framing with `objectFit` (`"cover"` or `"contain"`) and `objectPosition` (e.g. `"center top"`).
-
-Tip: keep each image under 500 KB. A square photo works best for the profile.
-
-## Links
-
-No project, LinkedIn or Facebook URLs were supplied, so they are shown as plain, non-clickable text. When you have a real URL, add it in `content.ts` and render it as a link in the matching component.
-
-## Deployment
-
-See `GUIDE.md`. Vercel settings: Framework **Vite**, Root Directory `./`, Build Command `npm run build`, Output Directory `dist`.
 
 ## Project Structure
 
@@ -86,7 +63,7 @@ personal-cv-profile3/
 ├── .gitignore
 ├── public/
 │   ├── favicon.svg
-│   └── images/README.txt
+│   └── images/
 └── src/
     ├── main.tsx
     ├── App.tsx

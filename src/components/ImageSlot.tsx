@@ -5,10 +5,7 @@ interface Props {
   className?: string;
 }
 
-/**
- * Shows the real picture when `src` is set in src/data/content.ts.
- * Otherwise shows a calm, clearly labeled placeholder (never a broken-image icon).
- */
+
 export default function ImageSlot({ image, className = "" }: Props) {
   if (image.src) {
     return (

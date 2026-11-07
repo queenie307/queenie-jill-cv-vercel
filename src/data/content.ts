@@ -27,7 +27,7 @@ export interface ImageSlotData {
   /** Label shown on the placeholder while src is null. */
   label: string;
   /** Letters shown on the profile placeholder only. */
-  initials: string;
+  initials?: string;
   objectFit: "cover" | "contain";
   objectPosition: string;
 }
@@ -102,7 +102,6 @@ export const education = {
   degree: "Bachelor of Science in Information Technology",
   school: profile.school,
   level: "Fourth Year",
-  // Labels are exactly as supplied ("2st" normalized to "2nd"). Edit them here if they need correcting.
   honors: [
     { title: "Second Honor", period: "1st Semester, Year 2021–2024" },
     { title: "Second Honor", period: "2nd Semester, Year 2024–2025" },
@@ -121,7 +120,6 @@ export const skills = [
 export const itInterestsNote =
   "I am still growing in IT, with interests in web development, software development and database management. I am learning through my studies and projects.";
 
-// Describes how THIS website was built. These are not claims about pre-existing personal skills.
 export const portfolioTech = {
   heading: "Portfolio tech stack",
   note: "Technologies used to build this website only.",
@@ -136,8 +134,7 @@ export const projects: Project[] = [
     description:
       "An ongoing capstone project that aims to develop a web-based system for detecting and classifying hard coral, soft coral, and other substrates from underwater images, with hard coral coverage analysis and GIS-based mapping of surveyed reef locations.",
     image: {
-      // TODO: replace null with "/images/coral-reef-project.jpg" after adding the file to public/images/
-      src: null,
+      src: "images/coral-project.jpeg",
       alt: "Preview of the coral reef monitoring capstone project",
       label: "Coral reef capstone preview",
       objectFit: "cover",
@@ -150,8 +147,7 @@ export const projects: Project[] = [
     description:
       "A real estate website designed to help users find houses and boarding houses for rent or purchase, with an emphasis on finding suitable locations, including potentially lower-flood-risk areas.",
     image: {
-      // TODO: replace null with "/images/prime-venture-project.jpg" after adding the file to public/images/
-      src: null,
+      src: "images/prime-venture.jpeg",
       alt: "Preview of the Prime Venture real estate website",
       label: "Prime Venture preview",
       objectFit: "cover",
@@ -160,7 +156,7 @@ export const projects: Project[] = [
   },
 ];
 
-/** Text-only cards. No certificate or photo placeholders. */
+
 export const achievements = [
   {
     kind: "Certification",
@@ -175,7 +171,7 @@ export const achievements = [
   {
     kind: "Academic honors",
     title: "Second Honor",
-    detail: "Three listed terms. See the Education section.",
+    detail: "Three listed terms.",
   },
 ];
 
@@ -199,7 +195,7 @@ export const experience = [
   {
     title: "Top 16 finalist, Technopreneurship competition",
     tag: "Recognition",
-    detail: "Recognized as a Top 16 finalist for “Venture Prime”. See Achievements.",
+    detail: "Recognized as a Top 16 finalist for “Venture Prime”.",
   },
 ];
 
@@ -211,7 +207,10 @@ export const social = {
   },
   // No URL supplied, so these are plain text (not links).
   facebook: { label: "Facebook", handle: "Queenie Jill D. Sumalinog" },
-  linkedin: { label: "LinkedIn", note: "Coming soon" },
+  linkedin: { 
+    label: "LinkedIn",    
+    handle: "Queenie Jill D. Sumalinog",
+    href: "https://www.linkedin.com/in/queenie-jill-sumalinog-a33b50449/", },
 };
 
 export const navItems = [
