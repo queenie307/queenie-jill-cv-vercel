@@ -27,7 +27,7 @@ export interface ImageSlotData {
   /** Label shown on the placeholder while src is null. */
   label: string;
   /** Letters shown on the profile placeholder only. */
-  initials?: string;
+  initials: string;
   objectFit: "cover" | "contain";
   objectPosition: string;
 }
@@ -51,20 +51,17 @@ export const profile = {
   title: "Information Technology Student / Aspiring IT Professional",
   level: "Fourth-year BSIT student",
   school: "Davao del Norte State College",
-  // Shown on the site (privacy-friendly).
   locationPublic: "San Vicente, Panabo City, Philippines",
-  // Full address kept here for editing. It is NOT displayed. To show it, use it in basicInfo below.
   locationFull: "Purok 5, San Vicente, Panabo City, Philippines",
   email: "queeniejillsumalinog@gmail.com",
   phone: "09919690857",
   photo: {
-    // TODO: replace null with "/images/profile.jpg" after adding the file to public/images/
-    src: null,
+    src: "/images/profile.jpeg",
     alt: "Portrait of Queenie Jill D. Sumalinog",
     label: "Profile photo",
     initials: "QS",
     objectFit: "cover",
-    objectPosition: "center top",
+    objectPosition: "center bottom",
   } as ImageSlotData,
 };
 
