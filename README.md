@@ -34,23 +34,6 @@ These are the tools used to build this website.
 - Keyboard accessible: skip link, visible focus states, semantic HTML, real `mailto:` and `tel:` links
 - Respects the "reduce motion" setting
 
-## Setup (Zorin OS / VS Code)
-
-Requires a current Node.js LTS release (20 or 22) and npm. Check with `node -v` and `npm -v`.
-
-```bash
-cd personal-cv-profile3
-npm install
-npm run dev        # development server, usually http://localhost:5173
-npm run build      # type-checks and builds into dist/
-npm run preview    # preview the production build locally
-```
-
-## Editing Content
-
-Everything is in **`src/data/content.ts`**: text, honors, skills, projects, links and image paths. Components do not need to change. The full home address is kept in the data file but only San Vicente, Panabo City is shown on the site.
-
-
 
 ## Project Structure
 

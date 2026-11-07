@@ -1,32 +1,11 @@
 /**
  * ALL WEBSITE CONTENT LIVES IN THIS FILE.
- * Edit text, labels and links here. You do not need to touch the components.
- *
- * ──────────────────────────────────────────────────────────────
- * IMAGES: ONLY THREE IMAGE SLOTS EXIST ON THIS SITE
- *   1. profile.photo            (hero)
- *   2. projects[0].image        (coral reef capstone preview)
- *   3. projects[1].image        (Prime Venture preview)
- *
- * To add a real picture:
- *   a. Copy the file into  public/images/
- *      e.g.  public/images/profile.jpg
- *            public/images/coral-reef-project.jpg
- *            public/images/prime-venture-project.jpg
- *   b. Replace `src: null` with the path, e.g.  src: "/images/profile.jpg"
- *   c. Rewrite `alt` so it describes the real picture.
- *   d. Optional: change objectPosition (e.g. "center top" keeps a face in frame).
- * ──────────────────────────────────────────────────────────────
  */
 
 export interface ImageSlotData {
-  /** Path inside /public (e.g. "/images/profile.jpg"). Keep null to show the placeholder. */
   src: string | null;
-  /** Describes the real picture once you add it. */
   alt: string;
-  /** Label shown on the placeholder while src is null. */
   label: string;
-  /** Letters shown on the profile placeholder only. */
   initials?: string;
   objectFit: "cover" | "contain";
   objectPosition: string;
@@ -205,7 +184,7 @@ export const social = {
     handle: "queenie307",
     href: "https://github.com/queenie307/",
   },
-  // No URL supplied, so these are plain text (not links).
+
   facebook: { label: "Facebook", handle: "Queenie Jill D. Sumalinog" },
   linkedin: { 
     label: "LinkedIn",    
