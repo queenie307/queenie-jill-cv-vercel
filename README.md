@@ -4,7 +4,7 @@ A calm, minimal personal CV website for **Queenie Jill D. Sumalinog**, a fourth-
 
 ## Live Website
 
-ADD AFTER DEPLOYMENT (paste the public Vercel URL here)
+https://queenie-jill-cv-vercel.vercel.app/
 
 ## GitHub Repository
 
